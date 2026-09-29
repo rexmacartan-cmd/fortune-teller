@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystical Fortune Teller</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <video src="stars.mp4" autoplay muted loop id="stars"></video>
+  <header>
+    <h1>Mystical <span>Fortune Teller</span></h1>
+  </header>
+  <main>
+    <label for="Personal Details">Personal Details</label><br><br>
+    <label for="First-Name">First Name</label>
+    <input type="text" name="First-Name" id="First-Name" required>
+    <label for="Last-Name">Last Name</label>
+    <input type="text" name="Last-Name" id="Last-Name" required><br><br>
+    <label for="Zodiac-Sign">Zodiac Sign</label>
+    <select name="Zodiac-Sign" id="Zodiac-Sign" required>
+      <option disabled selected>Choose your sign</option>
+      <option>Aries</option>
+      <option>Taurus</option>
+      <option>Gemini</option>
+      <option>Cancer</option>
+      <option>Leo</option>
+      <option>Virgo</option>
+      <option>Libra</option>
+      <option>Scorpio</option>
+      <option>Sagitaurius</option>
+      <option>Capricon</option>
+      <option>Aquarius</option>
+      <option>Pisces</option>
+    </select>
+    <button onclick="check()">Reveal My Fate</button>
+    <p>Destiny Zone</p>
+    <p id="results"></p>
+   <!-- <div class="overlay" id="resultOverlay">
+
+      <div class="result">
+
+      </div>
+
+    </div>-->
+        <h3>Result</h3>
+
+        <p id="name"></p>
+        <p id="luck"></p>
+        <p id="luckScore"></p>
+        <p id="resultsover"></p>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
